@@ -12,7 +12,9 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }));
 
 
-app.post('/uploadFile',upload.single('myfile'), (req, res, next)=> {    
+app.post('/uploadFile',upload.single('myfile'), (req, res, next)=> {  
+    // console.log("File Test===========>",req.file)  
+    // console.log("Body Test==============>",req.body)
     const newPath=`./uploads/${req.file.originalname}`
     fs.rename(req.file.path,newPath,(err)=>{
         if(err){
