@@ -22,7 +22,7 @@ app.post('/uploadFile',upload.single('myfile'), (req, res, next)=> {
             console.log(err);
         }else{
             res.json({
-                message: 'File Uploaded',
+                message: 'File Uploaded Successfully',
                 field:req.body,
                 image:req.file
     
