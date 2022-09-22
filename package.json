@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {    
-    "start":"node single-file-upload.js",
-    "start-dev":"nodemon single-file-upload.js"
+    "start":"node multiple-upload-array.js",
+    "start-dev":"nodemon multiple-upload-array.js"
   },
   "keywords": [],
   "author": "",

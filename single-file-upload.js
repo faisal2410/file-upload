@@ -33,6 +33,13 @@ app.post('/uploadFile',upload.single('myfile'), (req, res, next)=> {
    
   });
 
+//   Serve an html file through express server
+
+  app.get('/', (req, res) => {
+    res.sendFile('index.html')
+})
+
+
 
 
 
