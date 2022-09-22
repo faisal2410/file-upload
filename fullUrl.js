@@ -29,3 +29,5 @@ app.get('/page', (req, res, next) => {
 
 app.listen(3000)
 console.log("Server Run Success")
+
+// http://localhost:3000/page
