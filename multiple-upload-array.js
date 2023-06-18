@@ -36,5 +36,5 @@ app.post('/uploadFiles',upload.array('photos', 12), function(req, res, next) {
 
 
 
-app.listen(3000)
+app.listen(8000)
 console.log("Server Run Success")
