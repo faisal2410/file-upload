@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 const app = express();
+let indexRouter = require('./routes/index');
 const helmet = require('helmet');
 const multer = require('multer');
 const upload = multer({ dest:'./uploads' })
@@ -10,6 +11,7 @@ app.use(helmet())
 app.use(express.static('public'));
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }));
+app.use('/', indexRouter);
 
 
 app.post('/uploadFile',upload.single('myimg'), (req, res, next)=> {  
