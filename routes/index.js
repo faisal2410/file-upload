@@ -16,7 +16,10 @@ router.post('/formsub', upload.single('meme'), (req, res, next) => {
     fs.rename(req.file.path, newPath, (err) => {
         if (err) throw err;
         // upload newPath to the db
-        res.json("file uploaded!")
+        res.json({
+            message: "File uploaded",
+            info:req.body
+        })
     });
 
 })
