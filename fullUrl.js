@@ -27,7 +27,7 @@ app.get('/page', (req, res, next) => {
 })
 
 
-app.listen(3000)
-console.log("Server Run Success")
+app.listen(8000)
+console.log("Server Run Successfully")
 
 // http://localhost:3000/page
